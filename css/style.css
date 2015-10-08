@@ -1,0 +1,292 @@
+/*.main{
+  background-color: black;
+}*/
+
+body {
+  color: #fff;
+  font-family: Montserrat;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 2px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+  height: 2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  max-width: 80px;
+  bottom: 11px;
+  position: relative;
+  background-color: #000;
+  cursor: -webkit-grab;
+  -webkit-transition: border 1000ms ease;
+  transition: border 1000ms ease;
+}
+
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  border: 2px solid;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  max-width: 80px;
+  bottom: 11px;
+  background-color: #000;
+  position: relative;
+  cursor: -moz-grab;
+  -moz-transition: border 1000ms ease;
+  transition: border 1000ms ease;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+  cursor: -webkit-grabbing;
+}
+
+input[type=range]::-moz-range-thumb:active {
+  cursor: -moz-grabbing;
+}
+
+ul  {
+  list-style: none;
+  padding-left: 5px;
+}
+
+ul li {
+  border-bottom: 1px solid rgba(256, 2556, 256, 0.3);
+  padding-bottom: 10px;
+}
+
+ul li:hover {
+  cursor: pointer;
+}  
+
+.info {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 6px;
+  margin: 4px 20px 0;
+  vertical-align: top;
+}
+
+
+li img {
+  height: 60px;
+  width: 60px;
+}
+
+#audioList {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid rgba(256, 256, 256, 0.3);
+  border-right: 1px solid rgba(256, 256, 256, 0.3);
+  box-sizing: border-box;
+  display: none;
+  height: 65%;
+  padding: 0 10px;
+  position: absolute;
+  width: 350px;
+  z-index: 5; 
+}
+
+#currentTime {
+  font-size: 12px;
+  vertical-align: top;
+}
+
+#duration {
+  float: right;
+  font-size: 12px;
+}
+
+#listBtn{
+  overflow: overlay;
+  height: 2px;
+  width: 2px;
+  fill: #25D2F9;
+  margin-bottom: 15px;
+}
+
+#listBtn:hover{
+  cursor: pointer;
+}
+
+#playSong {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+#play {
+  padding: 0 3px;
+  width: 45px;
+  height: 45px;
+  x: 0px;
+  y: 0px;
+  enable-background: new 0 0 25 25;
+}
+
+#play g {
+  stroke: #25d2fd;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+}
+
+#play:hover {
+  cursor: pointer;
+}
+
+#pause {
+  x: 0px;
+  y: 0px;
+  enable-background: new 0 0 25 25;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-left: -42px;
+  margin-top: 8px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.actionControls {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.control {
+  background-color: black;
+  padding: 10px 20px 0;
+}
+
+.controlTime {
+  padding: 0 20px;
+}
+
+.cover {
+  height: 70px;
+  width: 70px;
+}
+
+.currentTime {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.full {
+  vertical-align: top;
+}
+
+.icon {
+  background-size: 100%;
+  width: 25px;
+  height: 25px;
+  x: 0px;
+  y: 0px;
+  enable-background: new 0 0 25 25;
+  margin-bottom: 9px;
+  stroke: #25d2fd;
+}
+
+.main {
+  background: #000;
+  border: 1px solid #292929;
+  color: #fff;
+  height: 640px;
+  margin: 0 auto;
+  width: 350px;
+}
+
+.mainCover {
+  border: 1px;
+  display: block;
+  height: 260px;
+  margin: 0 auto; 
+  padding: 15px 0;
+  width: 260px;
+}
+
+.menu {
+  background: rgba(256, 256, 256, 0.1);
+  height: 30px;
+  padding: 15px;
+}
+
+.muteBtn {  
+  height: 15px;
+  fill: #25d2fd;
+  float: left; 
+  overflow: overlay;
+  width: 15px;
+}
+
+.range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-top: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.range.blue::-webkit-slider-thumb {
+   border-color: rgb(59,173,227);
+}
+
+.step-backward g polygon:hover, .step-foreward g polygon:hover {
+  cursor: pointer;
+}
+
+.timeBar {
+  margin: 5px 0 15px;
+  margin-left: 155px;
+  width: 100%;
+}
+
+.titleArtist {
+  font-size: 12px;
+}
+
+.titleSong {
+  font-size: 16px;
+}
+
+.vol {
+  margin-top: 5px;
+}
+
+.volBar {
+  margin: 0 20px;
+  margin-left: 80px;
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

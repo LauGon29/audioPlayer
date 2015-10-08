@@ -1,0 +1,25 @@
+{
+	"audios":[
+		{
+			"id":"0",
+			"artist":"Artic Monkeys",
+			"nameSong":"Do I wanna Know",
+			"pista":"music/song1.mp3",
+			"image":"images/artic.jpg"
+		},
+		{
+			"id":"1",
+			"artist":"Goldfinger",
+			"nameSong":"Superman",
+			"pista":"music/song2.mp3",
+			"image":"images/goldfinger.jpg"
+		},
+		{
+			"id":"2",
+			"artist":"Bad Religion",
+			"nameSong":"American",
+			"pista":"music/song3.mp3",
+			"image":"images/badReligion.jpg"
+		}
+	]
+}
